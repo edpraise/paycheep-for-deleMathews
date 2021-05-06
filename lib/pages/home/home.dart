@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
         centerTitle: true,
         title: Text(
           'EduPay',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: mainColor),
         ),
         automaticallyImplyLeading: false,
       ),

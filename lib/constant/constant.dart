@@ -7,7 +7,8 @@ const Color greyColor = const Color(0xFF808080);
 const Color redColor = const Color(0xFFFF0000);
 const Color orangeColor = const Color(0xFFFFA500);
 const Color greenColor = const Color(0xFF006400);
-const Color scaffoldBgColor = const Color(0xFF6930C3);
+const Color scaffoldBgColor = const Color(0xFFffffff);
+const Color mainColor = const Color(0xFF6930C3);
 
 const double fixPadding = 10.0;
 

@@ -91,7 +91,7 @@ class _BottomBarState extends State<BottomBar> {
           children: [
             Icon(icon,
                 size: 21.0,
-                color: (currentIndex == index) ? primaryColor : whiteColor),
+                color: (currentIndex == index) ? primaryColor : mainColor),
             height5Space,
             Text(
               text,

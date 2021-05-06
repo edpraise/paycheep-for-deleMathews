@@ -129,7 +129,7 @@ class _SignInState extends State<SignIn> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: scaffoldBgColor,
+      backgroundColor: mainColor,
       body: WillPopScope(
         onWillPop: () async {
           bool backStatus = onWillPop();
@@ -267,9 +267,9 @@ class _SignInState extends State<SignIn> {
       ),
       child: TextField(
         cursorColor: primaryColor,
-        style: black14MediumTextStyle,
+        style: TextStyle(color: Colors.black),
         decoration: InputDecoration(
-          hintStyle: black14MediumTextStyle,
+          hintStyle: TextStyle(color: Colors.black),
           hintText: 'Customer ID',
           border: InputBorder.none,
         ),
@@ -296,10 +296,11 @@ class _SignInState extends State<SignIn> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: TextField(
+        obscureText: true,
         cursorColor: primaryColor,
-        style: black14MediumTextStyle,
+        style: TextStyle(color: Colors.black),
         decoration: InputDecoration(
-          hintStyle: black14MediumTextStyle,
+          hintStyle: TextStyle(color: Colors.black),
           hintText: 'Enter mPin',
           border: InputBorder.none,
         ),

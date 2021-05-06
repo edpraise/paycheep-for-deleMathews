@@ -33,7 +33,7 @@ class _AccountState extends State<Account> {
                 height20Space,
                 heightSpace,
                 accountFunctionalities(
-                  settingTitle: 'Change mPin & thumb impression',
+                  settingTitle: 'Change Pin',
                 ),
                 heightSpace,
                 InkWell(
@@ -236,7 +236,7 @@ class _AccountState extends State<Account> {
                       children: [
                         Text(
                           'You sure want to logout?',
-                          style: black16BoldTextStyle,
+                          style: TextStyle(color: blackColor),
                         ),
                         height20Space,
                         Row(
@@ -282,7 +282,7 @@ class _AccountState extends State<Account> {
       alignment: Alignment.center,
       padding: EdgeInsets.symmetric(vertical: fixPadding - 5.0),
       decoration: BoxDecoration(
-        color: (isCancel) ? whiteColor : primaryColor,
+        color: (isCancel) ? blackColor : mainColor,
         border: (isCancel) ? Border.all(color: primaryColor) : Border(),
         borderRadius: BorderRadius.circular(fixPadding),
       ),
@@ -301,7 +301,7 @@ class _AccountState extends State<Account> {
           children: [
             Text(
               settingTitle,
-              style: black14MediumTextStyle,
+              style: TextStyle(color: Colors.black),
             ),
             Icon(
               Icons.keyboard_arrow_right,

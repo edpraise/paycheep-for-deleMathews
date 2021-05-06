@@ -9,7 +9,7 @@ class _RegisterState extends State<Register> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: scaffoldBgColor,
+      backgroundColor: mainColor,
       body: ListView(
         physics: BouncingScrollPhysics(),
         children: [

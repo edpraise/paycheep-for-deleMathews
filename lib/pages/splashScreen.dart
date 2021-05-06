@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 3),
+      Duration(seconds: 10),
       () => Navigator.push(
         context,
         MaterialPageRoute(
@@ -27,7 +27,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     width = MediaQuery.of(context).size.width;
     return Scaffold(
-      backgroundColor: whiteColor,
+      backgroundColor: scaffoldBgColor,
       body: Stack(
         children: [
           icon(),
@@ -45,7 +45,7 @@ class _SplashScreenState extends State<SplashScreen> {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/icon.png'),
+            image: AssetImage('assets/user/ps.png'),
             fit: BoxFit.cover,
           ),
         ),

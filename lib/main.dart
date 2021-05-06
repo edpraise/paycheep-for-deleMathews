@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BankX',
+      title: 'PayCheep',
       theme: ThemeData(
         primaryColor: primaryColor,
         accentColor: Colors.black,
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: SignIn(),
+      home: SplashScreen(),
     );
   }
 }

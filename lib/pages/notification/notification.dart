@@ -30,7 +30,7 @@ class _NotificationsState extends State<Notifications> {
         ),
         centerTitle: true,
         automaticallyImplyLeading: false,
-        elevation: 1.0,
+        elevation: 0.0,
       ),
       body:
           (notificationList.length == 0) ? noNotifications() : notifications(),
