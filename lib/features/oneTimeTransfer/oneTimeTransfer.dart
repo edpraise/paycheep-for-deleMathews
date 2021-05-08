@@ -1,4 +1,8 @@
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
+
+import 'withAccountNumber.dart';
 
 class OneTimeTransfer extends StatelessWidget {
   @override

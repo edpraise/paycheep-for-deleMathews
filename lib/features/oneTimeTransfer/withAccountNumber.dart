@@ -1,4 +1,7 @@
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/oneTimeTransfer/oneTimeTrasferSuccessfull.dart';
+import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class WithAccountNumber extends StatefulWidget {
   @override

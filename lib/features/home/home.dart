@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:animated/animated.dart';
-import 'package:bankx/pages/home/flchart.dart';
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/home/flchart.dart';
+import 'package:bankx/features/screens.dart';
+import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
   @override

@@ -1,5 +1,7 @@
 import 'dart:async';
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/bottombar.dart';
+import 'package:flutter/material.dart';
 
 class OTPCode extends StatefulWidget {
   @override

@@ -1,4 +1,9 @@
-import 'package:bankx/pages/screens.dart';
+
+import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/nearByAtms/nearByATM.dart';
+import 'package:bankx/features/screens.dart';
+import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
 
 class Account extends StatefulWidget {
   @override

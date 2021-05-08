@@ -1,4 +1,7 @@
-import 'package:bankx/pages/screens.dart';
+
+import 'package:flutter/material.dart';
+
+import '../screens.dart';
 
 class NewDeposits extends StatefulWidget {
   @override

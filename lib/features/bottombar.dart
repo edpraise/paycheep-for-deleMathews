@@ -1,5 +1,11 @@
 import 'dart:io';
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/account/account.dart';
+import 'package:bankx/features/home/home.dart';
+import 'package:bankx/features/notification/notification.dart';
+
+import 'package:flutter/material.dart';
+
 import 'package:fluttertoast/fluttertoast.dart';
 
 class BottomBar extends StatefulWidget {

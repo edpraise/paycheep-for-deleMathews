@@ -1,4 +1,6 @@
-import 'package:bankx/pages/screens.dart';
+
+import 'package:bankx/constant/constant.dart';
+import 'package:flutter/material.dart';
 
 class Support extends StatefulWidget {
   @override

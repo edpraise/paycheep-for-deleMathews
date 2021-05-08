@@ -1,5 +1,7 @@
-import 'package:bankx/pages/screens.dart';
+
+import 'package:bankx/features/screens.dart';
 import 'package:bankx/widget/column_builder.dart';
+import 'package:flutter/material.dart';
 
 class LoanStatement extends StatefulWidget {
   final String loanType;

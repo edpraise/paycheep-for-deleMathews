@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:animated/animated.dart';
-import 'package:bankx/pages/screens.dart';
-
+import 'package:bankx/features/screens.dart';
 class Loans extends StatefulWidget {
   @override
   _LoansState createState() => _LoansState();

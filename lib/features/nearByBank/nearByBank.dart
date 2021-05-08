@@ -1,5 +1,6 @@
-import 'package:bankx/pages/nearByBank/bankModel.dart';
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/features/nearByBank/bankModel.dart';
+import 'package:bankx/features/screens.dart';
+
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class NearByBanks extends StatefulWidget {

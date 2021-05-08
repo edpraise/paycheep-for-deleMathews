@@ -1,4 +1,8 @@
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+
+import 'package:flutter/material.dart';
+
+import '../screens.dart';
 
 class FundTransfer extends StatelessWidget {
   @override

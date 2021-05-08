@@ -1,6 +1,8 @@
-import 'package:bankx/pages/screens.dart';
+
+import 'package:bankx/features/screens.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
 
 class FlChart extends StatefulWidget {
   @override

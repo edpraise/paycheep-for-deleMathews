@@ -1,4 +1,5 @@
-import 'package:bankx/pages/screens.dart';
+
+import 'package:bankx/features/screens.dart';
 import 'package:bankx/widget/column_builder.dart';
 import 'package:flutter/cupertino.dart';
 

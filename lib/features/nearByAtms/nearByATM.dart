@@ -1,5 +1,6 @@
-import 'package:bankx/pages/nearByAtms/atmModel.dart';
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/nearByAtms/atmModel.dart';
+import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class NearByATMs extends StatefulWidget {

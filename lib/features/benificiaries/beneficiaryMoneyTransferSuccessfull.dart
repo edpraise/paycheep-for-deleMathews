@@ -1,4 +1,5 @@
-import 'package:bankx/pages/screens.dart';
+import 'package:bankx/features/screens.dart';
+
 
 class BeneficiaryTransferSuccessfull extends StatefulWidget {
   @override
