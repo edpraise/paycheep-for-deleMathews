@@ -4,11 +4,13 @@ const Color primaryColor = const Color(0xFF62FFA1);
 const Color whiteColor = Colors.white;
 const Color blackColor = Colors.black;
 const Color greyColor = const Color(0xFF808080);
-const Color redColor = const Color(0xFFFF0000);
+const Color redColor = const Color(0xFFFF005C);
 const Color orangeColor = const Color(0xFFFFA500);
 const Color greenColor = const Color(0xFF006400);
 const Color scaffoldBgColor = const Color(0xFFffffff);
-const Color mainColor = const Color(0xFF6930C3);
+const Color btnColor = const Color(0xFF6930C3);
+const Color mainColor = const Color(0xFF0A043C);
+const Color dbColor = const Color(0xFFFF005C);
 
 const double fixPadding = 10.0;
 
@@ -161,7 +163,7 @@ const TextStyle white36BoldTextStyle = const TextStyle(
 
 const TextStyle primaryColor10RegularTextStyle = const TextStyle(
   fontSize: 10.0,
-  color: primaryColor,
+  color: mainColor,
 );
 
 const TextStyle primaryColor12RegularTextStyle = const TextStyle(
@@ -220,7 +222,7 @@ const TextStyle grey12RegularTextStyle = const TextStyle(
 
 const TextStyle grey14RegularTextStyle = const TextStyle(
   fontSize: 14.0,
-  color: greyColor,
+  color: greyColor  ,
 );
 
 const TextStyle grey12MediumTextStyle = const TextStyle(

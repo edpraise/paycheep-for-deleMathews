@@ -1,3 +1,4 @@
+import 'dart:ui';
 
 import 'package:bankx/constant/constant.dart';
 import 'package:flutter/material.dart';
@@ -161,16 +162,16 @@ class _TransactionsState extends State<Transactions> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
-                  Text(
-                    'USD',
-                    style: black14MediumTextStyle,
-                  ),
+                  // Text(
+                  //   'USD',
+                  //   style: black14MediumTextStyle,
+                  // ),
                   height5Space,
                   Text(
                     (transaction['iscredit'])
-                        ? '+${transaction['amount']}'
+                        ? '-${transaction['amount']}'
                         : '-${transaction['amount']}',
-                    style: black16BoldTextStyle,
+                    style: TextStyle(color: dbColor),
                   ),
                 ],
               ),

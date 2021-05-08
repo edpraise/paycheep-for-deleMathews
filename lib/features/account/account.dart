@@ -1,4 +1,3 @@
-
 import 'package:bankx/constant/constant.dart';
 import 'package:bankx/features/nearByAtms/nearByATM.dart';
 import 'package:bankx/features/screens.dart';
@@ -18,7 +17,7 @@ class _AccountState extends State<Account> {
       backgroundColor: scaffoldBgColor,
       appBar: AppBar(
         backgroundColor: whiteColor,
-        elevation: 1.0,
+        elevation: 0.0,
         centerTitle: true,
         title: Text(
           'Account',
@@ -181,10 +180,7 @@ class _AccountState extends State<Account> {
             height: 40.0,
             width: 40.0,
             alignment: Alignment.center,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.blue,
-            ),
+            decoration: BoxDecoration(shape: BoxShape.circle, color: mainColor),
             child: Icon(
               Icons.edit,
               size: 24.0,
@@ -203,13 +199,13 @@ class _AccountState extends State<Account> {
         children: [
           Icon(
             Icons.exit_to_app,
-            color: redColor,
+            color: Colors.black,
             size: 22.0,
           ),
           widthSpace,
           Text(
             'Logout',
-            style: red14MediumTextStyle,
+            style: TextStyle(color: Colors.black),
           ),
         ],
       ),

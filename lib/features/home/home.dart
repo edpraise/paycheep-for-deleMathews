@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:animated/animated.dart';
 import 'package:bankx/constant/constant.dart';
-import 'package:bankx/features/home/flchart.dart';
 import 'package:bankx/features/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -13,12 +12,12 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final cardList = [
     {
-      'accountType': 'Saving Account',
+      'accountType': 'Checking Wallet',
       'accountNumber': '0325 2365 1478',
       'balance': '1,899',
     },
     {
-      'accountType': 'Current Account',
+      'accountType': 'Saving Wallet',
       'accountNumber': '5984 4562 3258',
       'balance': '15,098',
     },
@@ -53,7 +52,10 @@ class _HomeState extends State<Home> {
         physics: BouncingScrollPhysics(),
         children: [
           cards(),
-          FlChart(),
+          Container(
+            height: 20,
+          ),
+          // FlChart(),
           transactionsAndFundtransfer(),
           InkWell(
             onTap: () => Navigator.push(
@@ -64,7 +66,10 @@ class _HomeState extends State<Home> {
                 child: Loans(),
               ),
             ),
-            child: bankServices(title: 'Loans', image: 'assets/loan.png'),
+            child: bankServices(
+              title: 'Interanational Transactions',
+              image: 'assets/loan.png',
+            ),
           ),
           InkWell(
             onTap: () => Navigator.push(
@@ -75,8 +80,7 @@ class _HomeState extends State<Home> {
                 child: Deposits(),
               ),
             ),
-            child:
-                bankServices(title: 'Deposits', image: 'assets/deposite.png'),
+            child: bankServices(title: 'Cards', image: 'assets/deposite.png'),
           ),
           InkWell(
             onTap: () => Navigator.push(
@@ -87,9 +91,10 @@ class _HomeState extends State<Home> {
                 child: Cards(),
               ),
             ),
-            child: bankServices(title: 'Cards', image: 'assets/cards.png'),
+            child: bankServices(
+                title: 'Airtime & utilities', image: 'assets/cards.png'),
           ),
-          bankServices(title: 'All Services', image: 'assets/more.png'),
+          bankServices(title: 'Save', image: 'assets/more.png'),
           height20Space,
           businessLoan(),
           height20Space,
@@ -270,7 +275,7 @@ class _HomeState extends State<Home> {
         children: [
           Text(
             title,
-            style: black14MediumTextStyle,
+            style: TextStyle(color: Colors.black),
           ),
           heightSpace,
           Container(
@@ -291,7 +296,7 @@ class _HomeState extends State<Home> {
             child: Icon(
               Icons.arrow_forward,
               size: 15.0,
-              color: blackColor,
+              color: mainColor,
             ),
           ),
         ],
@@ -301,7 +306,7 @@ class _HomeState extends State<Home> {
 
   cards() {
     return Container(
-      height: 136,
+      height: 156,
       width: double.infinity,
       margin: EdgeInsets.only(
         top: fixPadding * 2.0,
@@ -321,7 +326,7 @@ class _HomeState extends State<Home> {
               child: child,
             ),
             child: Container(
-              width: 270.0,
+              width: 280.0,
               margin: (index != cardList.length - 1)
                   ? EdgeInsets.only(left: 20.0)
                   : EdgeInsets.only(left: 20.0, right: 20.0),
@@ -341,9 +346,25 @@ class _HomeState extends State<Home> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      card['accountType'],
-                      style: white14MediumTextStyle,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          card['accountType'],
+                          style: white14MediumTextStyle,
+                        ),
+                        Container(
+                          height: 20,
+                          width: 20,
+                          decoration: BoxDecoration(
+                              shape: BoxShape.circle, color: Colors.white),
+                          child: Icon(
+                            Icons.add,
+                            color: Colors.black,
+                            size: 20,
+                          ),
+                        )
+                      ],
                     ),
                     heightSpace,
                     Text(

@@ -235,12 +235,12 @@ class _SignInState extends State<SignIn> {
         ),
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: primaryColor,
+          color: btnColor,
           borderRadius: BorderRadius.circular(10.0),
         ),
         child: Text(
           'Continue',
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),
     );
