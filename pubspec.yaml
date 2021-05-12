@@ -28,9 +28,9 @@ dependencies:
   fl_chart: ^0.20.1
   page_transition: ^1.1.6
   google_maps_flutter: ^0.5.28+1
-  local_auth: ^0.6.3+4
   fluttertoast: ^7.1.6
   url_launcher: ^6.0.3
+  flutter_paystack: ^1.0.5+1
 
 dev_dependencies:
   flutter_test:
@@ -40,14 +40,14 @@ dev_dependencies:
 
 flutter_native_splash:
   color: 	"#6930C3"
-  image: assets/user/ps.png
+  image: assets/user/sp.png
   android: true
   ios: true
   
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon.png"
+  image_path: "assets/user/sp.png"
 
 module:
   androidX: true

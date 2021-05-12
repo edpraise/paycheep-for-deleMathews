@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:animated/animated.dart';
 import 'package:bankx/constant/constant.dart';
+import 'package:bankx/features/payment/payment.dart';
 import 'package:bankx/features/screens.dart';
 import 'package:flutter/material.dart';
 
@@ -361,15 +362,24 @@ class _HomeState extends State<Home> {
                           card['accountType'],
                           style: white14MediumTextStyle,
                         ),
-                        Container(
-                          height: 20,
-                          width: 20,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle, color: Colors.white),
-                          child: Icon(
-                            Icons.add,
-                            color: Colors.black,
-                            size: 20,
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        PaymentScreenPayStack()));
+                          },
+                          child: Container(
+                            height: 20,
+                            width: 20,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle, color: Colors.white),
+                            child: Icon(
+                              Icons.add,
+                              color: Colors.black,
+                              size: 20,
+                            ),
                           ),
                         )
                       ],

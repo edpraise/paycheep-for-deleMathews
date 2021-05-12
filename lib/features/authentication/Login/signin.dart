@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:bankx/features/authentication/Registrarion/register.dart';
 import 'package:bankx/features/screens.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:local_auth/local_auth.dart';
+// import 'package:local_auth/local_auth.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -11,7 +11,7 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-  final LocalAuthentication auth = LocalAuthentication();
+  // final LocalAuthentication auth = LocalAuthentication();
   // bool _canCheckBiometrics;
   // List<BiometricType> _availableBiometrics;
   // String _authorized = 'Not authorized';
