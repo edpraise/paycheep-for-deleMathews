@@ -27,6 +27,6 @@ export 'package:bankx/features/privacyPolicy/privacyPolicy.dart';
 export 'package:bankx/features/termsOfUse/termsOfUse.dart';
 export 'package:bankx/features/support/support.dart';
 export 'package:bankx/features/splashScreen.dart';
-export 'package:bankx/features/authentication/Registrarion/register.dart';
-export 'package:bankx/features/authentication/Login/signin.dart';
+export 'package:bankx/features/authentication/Registrarion/views/register.dart';
+export 'package:bankx/features/authentication/Login/view/signin.dart';
 export 'package:bankx/features/authentication/OtpVerification/otpCode.dart';

@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:bankx/features/authentication/Registrarion/register.dart';
+import 'package:bankx/features/authentication/Registrarion/views/register.dart';
 import 'package:bankx/features/screens.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 // import 'package:local_auth/local_auth.dart';
@@ -270,7 +270,7 @@ class _SignInState extends State<SignIn> {
         style: TextStyle(color: Colors.black),
         decoration: InputDecoration(
           hintStyle: TextStyle(color: Colors.black),
-          hintText: 'Customer ID',
+          hintText: 'Email',
           border: InputBorder.none,
         ),
       ),
@@ -301,7 +301,7 @@ class _SignInState extends State<SignIn> {
         style: TextStyle(color: Colors.black),
         decoration: InputDecoration(
           hintStyle: TextStyle(color: Colors.black),
-          hintText: 'Enter mPin',
+          hintText: 'Password',
           border: InputBorder.none,
         ),
       ),
