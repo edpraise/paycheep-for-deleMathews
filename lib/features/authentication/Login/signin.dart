@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:bankx/features/authentication/Registrarion/register.dart';
 import 'package:bankx/features/screens.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:local_auth/local_auth.dart';
@@ -211,7 +212,7 @@ class _SignInState extends State<SignIn> {
         color: blackColor.withOpacity(0.46),
         alignment: Alignment.center,
         child: Text(
-          'EduPay',
+          'NameCheep',
           style: white36BoldTextStyle,
         ),
       ),

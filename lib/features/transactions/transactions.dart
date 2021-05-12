@@ -131,16 +131,15 @@ class _TransactionsState extends State<Transactions> {
                     width: 40.0,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
-                      color: primaryColor.withOpacity(0.20),
+                      color: mainColor.withOpacity(0.20),
                       shape: BoxShape.circle,
-                      border: Border.all(color: primaryColor),
+                      border: Border.all(color: mainColor),
                     ),
                     child: Icon(
-                      (transaction['iscredit'])
-                          ? Icons.arrow_downward
-                          : Icons.arrow_upward,
-                      color: primaryColor,
-                    ),
+                        (transaction['iscredit'])
+                            ? Icons.arrow_downward
+                            : Icons.arrow_downward,
+                        color: rdColor),
                   ),
                   widthSpace,
                   Column(

@@ -11,6 +11,7 @@ const Color scaffoldBgColor = const Color(0xFFffffff);
 const Color btnColor = const Color(0xFF6930C3);
 const Color mainColor = const Color(0xFF0A043C);
 const Color dbColor = const Color(0xFFFF005C);
+const Color rdColor =  Colors.red;
 
 const double fixPadding = 10.0;
 

@@ -13,12 +13,12 @@ class _HomeState extends State<Home> {
   final cardList = [
     {
       'accountType': 'Checking Wallet',
-      'accountNumber': '0325 2365 1478',
+      'accountNumber': '*************',
       'balance': '1,899',
     },
     {
       'accountType': 'Saving Wallet',
-      'accountNumber': '5984 4562 3258',
+      'accountNumber': '************',
       'balance': '15,098',
     },
   ];
@@ -42,9 +42,14 @@ class _HomeState extends State<Home> {
         backgroundColor: scaffoldBgColor,
         elevation: 0.0,
         centerTitle: true,
-        title: Text(
-          'EduPay',
-          style: TextStyle(color: mainColor),
+        title: Container(
+          height: 40,
+          width: 100,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: mainColor,
+              image: DecorationImage(
+                  fit: BoxFit.cover, image: AssetImage('assets/user/ap.png'))),
         ),
         automaticallyImplyLeading: false,
       ),
@@ -55,6 +60,9 @@ class _HomeState extends State<Home> {
           Container(
             height: 20,
           ),
+          height20Space,
+          height20Space,
+          height20Space,
           // FlChart(),
           transactionsAndFundtransfer(),
           InkWell(
@@ -80,7 +88,8 @@ class _HomeState extends State<Home> {
                 child: Deposits(),
               ),
             ),
-            child: bankServices(title: 'Cards', image: 'assets/deposite.png'),
+            child: bankServices(
+                title: 'Airtime & utilities', image: 'assets/deposite.png'),
           ),
           InkWell(
             onTap: () => Navigator.push(
@@ -91,81 +100,80 @@ class _HomeState extends State<Home> {
                 child: Cards(),
               ),
             ),
-            child: bankServices(
-                title: 'Airtime & utilities', image: 'assets/cards.png'),
+            child: bankServices(title: 'Cards', image: 'assets/cards.png'),
           ),
           bankServices(title: 'Save', image: 'assets/more.png'),
           height20Space,
-          businessLoan(),
-          height20Space,
-          educationLoan(),
-          height20Space,
+          // businessLoan(),
+          // height20Space,
+          // educationLoan(),
+          // height20Space,
         ],
       ),
     );
   }
 
-  educationLoan() {
-    return InkWell(
-      onTap: () => Navigator.push(
-        context,
-        PageTransition(
-          duration: Duration(milliseconds: 500),
-          type: PageTransitionType.rightToLeft,
-          child: BusinessLoan(),
-        ),
-      ),
-      child: Container(
-        height: 100,
-        margin: EdgeInsets.symmetric(horizontal: fixPadding * 2.0),
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/education-loan.jpg'),
-            fit: BoxFit.fill,
-          ),
-          boxShadow: [
-            BoxShadow(
-              spreadRadius: 1.0,
-              blurRadius: 4.0,
-              color: greyColor.withOpacity(0.5),
-            ),
-          ],
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-      ),
-    );
-  }
+  // educationLoan() {
+  //   return InkWell(
+  //     onTap: () => Navigator.push(
+  //       context,
+  //       PageTransition(
+  //         duration: Duration(milliseconds: 500),
+  //         type: PageTransitionType.rightToLeft,
+  //         child: BusinessLoan(),
+  //       ),
+  //     ),
+  //     child: Container(
+  //       height: 100,
+  //       margin: EdgeInsets.symmetric(horizontal: fixPadding * 2.0),
+  //       decoration: BoxDecoration(
+  //         image: DecorationImage(
+  //           image: AssetImage('assets/education-loan.jpg'),
+  //           fit: BoxFit.fill,
+  //         ),
+  //         boxShadow: [
+  //           BoxShadow(
+  //             spreadRadius: 1.0,
+  //             blurRadius: 4.0,
+  //             color: greyColor.withOpacity(0.5),
+  //           ),
+  //         ],
+  //         borderRadius: BorderRadius.circular(10.0),
+  //       ),
+  //     ),
+  //   );
+  // }
 
-  businessLoan() {
-    return InkWell(
-      onTap: () => Navigator.push(
-        context,
-        PageTransition(
-          duration: Duration(milliseconds: 500),
-          type: PageTransitionType.rightToLeft,
-          child: BusinessLoan(),
-        ),
-      ),
-      child: Container(
-        height: 170,
-        margin: EdgeInsets.symmetric(horizontal: fixPadding * 2.0),
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/business-loan.jpg'),
-            fit: BoxFit.fill,
-          ),
-          boxShadow: [
-            BoxShadow(
-              spreadRadius: 1.0,
-              blurRadius: 4.0,
-              color: greyColor.withOpacity(0.5),
-            ),
-          ],
-          borderRadius: BorderRadius.circular(10.0),
-        ),
-      ),
-    );
-  }
+  // businessLoan() {
+  //   return InkWell(
+  //     onTap: () => Navigator.push(
+  //       context,
+  //       PageTransition(
+  //         duration: Duration(milliseconds: 500),
+  //         type: PageTransitionType.rightToLeft,
+  //         child: BusinessLoan(),
+  //       ),
+  //     ),
+  //     child: Container(
+  //       height: 170,
+  //       margin: EdgeInsets.symmetric(horizontal: fixPadding * 2.0),
+  //       decoration: BoxDecoration(
+  //         image: DecorationImage(
+  //           image: AssetImage('assets/business-loan.jpg'),
+  //           fit: BoxFit.fill,
+  //         ),
+  //         boxShadow: [
+  //           BoxShadow(
+  //             spreadRadius: 1.0,
+  //             blurRadius: 4.0,
+  //             color: greyColor.withOpacity(0.5),
+  //           ),
+  //         ],
+  //         borderRadius: BorderRadius.circular(10.0),
+  //       ),
+  //     ),
+  //   );
+  // }
 
   bankServices({title, image}) {
     return Container(
