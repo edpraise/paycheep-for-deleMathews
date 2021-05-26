@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
             ),
             child: bankServices(
               title: 'Interanational Transactions',
-              image: 'assets/loan.png',
+              image: 'assets/user/l4.png',
             ),
           ),
           InkWell(
@@ -90,7 +90,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             child: bankServices(
-                title: 'Airtime & utilities', image: 'assets/deposite.png'),
+                title: 'Airtime & utilities', image: 'assets/user/l2.png'),
           ),
           InkWell(
             onTap: () => Navigator.push(
@@ -101,9 +101,9 @@ class _HomeState extends State<Home> {
                 child: Cards(),
               ),
             ),
-            child: bankServices(title: 'Cards', image: 'assets/cards.png'),
+            child: bankServices(title: 'Cards', image: 'assets/user/l1.png'),
           ),
-          bankServices(title: 'Save', image: 'assets/more.png'),
+          bankServices(title: 'Save', image: 'assets/user/l3.png'),
           height20Space,
           // businessLoan(),
           // height20Space,

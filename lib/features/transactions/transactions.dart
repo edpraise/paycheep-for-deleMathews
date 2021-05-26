@@ -147,12 +147,12 @@ class _TransactionsState extends State<Transactions> {
                     children: [
                       Text(
                         transaction['type'],
-                        style: black16MediumTextStyle,
+                        style: TextStyle(color: Colors.black),
                       ),
                       height5Space,
                       Text(
                         transaction['owner'],
-                        style: grey14MediumTextStyle,
+                        style: TextStyle(color: Colors.black),
                       ),
                     ],
                   ),

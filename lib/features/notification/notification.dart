@@ -86,7 +86,7 @@ class _NotificationsState extends State<Notifications> {
                   width: 40.0,
                   height: 40.0,
                   decoration: BoxDecoration(
-                    color: primaryColor,
+                    color: mainColor,
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
@@ -102,12 +102,12 @@ class _NotificationsState extends State<Notifications> {
                     children: [
                       Text(
                         notification['title'],
-                        style: black14BoldTextStyle,
+                        style: TextStyle(color: Colors.black),
                       ),
                       heightSpace,
                       Text(
                         notification['notification'],
-                        style: black14MediumTextStyle,
+                        style: TextStyle(color: Colors.black),
                       ),
                     ],
                   ),
